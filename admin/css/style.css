@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+    background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--BuPz-p40--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nphrgz8yfnjylrwfr0yl.png);
+}
+/* Heading */
+.title{
+  color: rgb(84, 138, 238);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 25px;
+  text-align: center;
+  font-size: 32px;
+  text-transform: uppercase;
+  background-color: rgb(39, 28, 111);
+}
+
+/* Back Button */
+.btn-outline-info {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 40em;
+  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  font-family: -apple-system,sans-serif;
+  font-size: 22px;
+  font-weight: 10px;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.btn-outline-info:hover {
+  background-color: #FFC229;
+  box-shadow: #FF6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+.btn-outline-info:active {
+  transform: scale(1.025);
+}
+@media (min-width: 768px) {
+  .btn-outline-info {
+  font-size: 0.9rem;
+  padding: .3rem 2rem;
+  float: right;
+  }
+}
+
+/* Movies Page */
+thead{
+  color: #9fc5ff;
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+tbody{
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.link{
+  color: aqua;
+}
+
+/* Add Movies page */
+.form-group{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(12, 252, 244);
+}
+.form-control{
+  background-color: #f6e6e6;
+  color: #000000;  
+}
+.catergory{
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(1, 8, 8);
+  background-color: #fabdbd;
+  border-radius: 3px;
+}
+.showing_status{
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(1, 8, 8);
+  background-color: #fabdbd;
+  border-radius: 3px;
+}
+.ai{
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(1, 8, 8);
+  background-color: #fabdbd;
+  border-radius: 3px;
+}
+
+/* Add Movie btn */
+.add_movie {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.add_movie:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-add_movie 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+@keyframes glowing-add_movie {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.add_movie:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+/* Announcement Submit btn */
+.submit_btn {
+  align-items: center;
+  background-image: linear-gradient(135deg, #c74870 40%, #e17236);
+  border: 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: rgb(244, 184, 184);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-family: "Codec cold",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  height: 54px;
+  justify-content: center;
+  letter-spacing: .4px;
+  line-height: 1;
+  max-width: 10%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.submit_btn:active {
+  outline: 0;
+}
+.submit_btn:hover {
+  outline: 0;
+}
+.submit_btn span {
+  transition: all 200ms;
+}
+.submit_btn:hover span {
+  transform: scale(.9);
+  opacity: .75;
+}
+@media screen and (max-width: 991px) {
+  .submit_btn {
+    font-size: 15px;
+    height: 50px;
+  }
+  .submit_btn span {
+    line-height: 50px;
+  }
+}
+
+/* Add Movies btn | Add Announcements btn */
+.btn-out {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 40em;
+  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  font-family: -apple-system,sans-serif;
+  font-size: 22px;
+  font-weight: 10px;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.btn-out:hover {
+  background-color: #FFC229;
+  box-shadow: #FF6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+.btn-out:active {
+  transform: scale(1.025);
+}
+@media (min-width: 768px) {
+  .btn-out {
+  font-size: 0.9rem;
+  padding: .3rem 2rem;
+  float: left;
+  }
+}
